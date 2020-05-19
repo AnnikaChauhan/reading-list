@@ -11,11 +11,13 @@ const Book = ({ book }) => {
 };
 
 Book.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
+    author: PropTypes.string
 };
 
 Book.defaultProps = {
-    title: "Pass props down for title"
+    title: "Pass props down for title",
+    author: "Pass props down for author"
 };
 
 export default Book;
