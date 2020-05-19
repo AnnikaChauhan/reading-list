@@ -6,6 +6,7 @@ const Book = ({ book }) => {
         <div>
             <h4>{book.title}</h4>
             <p>{book.author}</p>
+            <button>Add to my Reading List</button>
         </div>
     );
 };

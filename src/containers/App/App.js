@@ -2,16 +2,19 @@ import React from 'react';
 import './App.module.scss';
 
 import { ReadingListContextProvider } from '../../contexts/ReadingListContext';
+import { CrudContextProvider } from '../../contexts/CrudContext';
 
 import ReadingList from '../../components/ReadingList';
 
 const App = () => {
-  return(
+  return (
     <main>
       <h1>Reading List</h1>
-      <ReadingListContextProvider>
-        <ReadingList />
-      </ReadingListContextProvider>
+      <CrudContextProvider>
+        <ReadingListContextProvider>
+          <ReadingList />
+        </ReadingListContextProvider>
+      </CrudContextProvider>
     </main>
   );
 }
