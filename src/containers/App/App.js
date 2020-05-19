@@ -5,6 +5,7 @@ import { ReadingListContextProvider } from '../../contexts/ReadingListContext';
 import { CrudContextProvider } from '../../contexts/CrudContext';
 
 import ReadingList from '../../components/ReadingList';
+import BookShelf from '../../components/BookShelf';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <CrudContextProvider>
         <ReadingListContextProvider>
           <ReadingList />
+          <BookShelf />
         </ReadingListContextProvider>
       </CrudContextProvider>
     </main>
