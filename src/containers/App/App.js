@@ -1,11 +1,18 @@
 import React from 'react';
 import './App.module.scss';
 
+import { ReadingListContextProvider } from '../../contexts/ReadingListContext';
+
+import ReadingList from '../../components/ReadingList';
+
 const App = () => {
   return(
-    <div>
+    <main>
       <h1>Reading List</h1>
-    </div>
+      <ReadingListContextProvider>
+        <ReadingList />
+      </ReadingListContextProvider>
+    </main>
   );
 }
 
