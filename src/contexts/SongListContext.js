@@ -8,12 +8,12 @@ export const SongListContextProvider = (props) => {
         { title: 'Maps', artist: 'Maroon 5' }
     ]);
 
-    // const addSong = (newSong) => {
-    //     setSongs([...songs, newSong]);
-    // };
+    const addSong = (newSong) => {
+        setSongs([...songs, newSong]);
+    };
 
     return (
-        <SongListContext.Provider value={{ songs }}>
+        <SongListContext.Provider value={{ songs, addSong }}>
             {props.children}
         </SongListContext.Provider>
     );
