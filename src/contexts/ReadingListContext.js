@@ -5,8 +5,8 @@ const ReadingListContext = createContext();
 export const ReadingListContextProvider = (props) => {
     const [books, setBooks] = useState([]);
 
-    const addBook = (book) => {
-        setBooks([...books, book]);
+    const addBook = (addedBook) => {
+        setBooks([...books, addedBook]);
     }
 
     const removeBook = (deleteBook) => {

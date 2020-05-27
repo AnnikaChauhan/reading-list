@@ -1,0 +1,45 @@
+.book {
+    margin: 10px;
+    padding: 10px;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    border-radius: 5px;
+
+    &:hover {
+        border: 1px solid orange;
+    }
+
+    div {
+        h4 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        button {
+            height: 30px;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: orange;
+            }
+        }
+    }
+
+    img {
+        margin: 5px;
+        width: 50%;
+    }
+}

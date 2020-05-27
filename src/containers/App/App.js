@@ -1,22 +1,22 @@
 import React from 'react';
-import './App.module.scss';
+import styles from './App.module.scss';
 
-import { ReadingListContextProvider } from '../../contexts/ReadingListContext';
 import { CrudContextProvider } from '../../contexts/CrudContext';
+import { SongListContextProvider } from '../../contexts/SongListContext';
 
-import ReadingList from '../../components/ReadingList';
-import BookShelf from '../../components/BookShelf';
+import ReadingListContainer from '../ReadingListContainer';
+import SongList from '../../components/SongList';
 
 const App = () => {
   return (
-    <main>
-      <h1>Reading List</h1>
+    <main className={styles.app}>
+      <h1>My Lists</h1>
       <CrudContextProvider>
-        <ReadingListContextProvider>
-          <ReadingList />
-          <BookShelf />
-        </ReadingListContextProvider>
+        <ReadingListContainer />
       </CrudContextProvider>
+      <SongListContextProvider>
+        <SongList />
+      </SongListContextProvider>
     </main>
   );
 }
